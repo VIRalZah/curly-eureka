@@ -15,7 +15,7 @@ namespace gd {
 		std::string m_sFilePath;
 
 	public:
-		static GameSoundManager* sharedState() {
+		static GameSoundManager* sharedManager() {
 			return reinterpret_cast<GameSoundManager* (__stdcall*)()>(base + 0x24800)();
 		}
 		static void playEffect(std::string sName) {
